@@ -1,4 +1,4 @@
-## Andmetüüpid
+## Andmetüübid
 1. **Teksti või sümboolid** - VARCHAR(50), CHAR(3), TEXT
 Näited: nimi, nimetus, telefoniNumber, isikukood - vARCHAR(11)
 2. **ARVULISED**- int, bigint, smallint, decimal(5,2) -5 kokku, 2- peale komat
