@@ -8,11 +8,11 @@
 --SQL:
 CREATE DATABASE merkulovaTIT;
 --Object Explorer on vaja pidevalt uuendada käsitsi!
-USE merkulovaTIT;
+vali hiirega andmebaasi
 
 --tabeli loomine
 CREATE TABLE opilane(
-opilaneID int Primary Key identity(1,1),
+opilaneID int Primary Key AUTO_INCREMENT,
 eesnimi varchar(25),
 perenimi varchar(30) Unique,
 synniaeg date,
@@ -31,7 +31,7 @@ VALUES ('Andrei', 'Ivanov', '2005-12-5', 'Tallinn', 1),
 ('Peeter', 'Uus', '2000-10-5', 'Tallinn', 0);
 
 CREATE TABLE ryhm(
-ryhmID int not null primary key identity(1,1),
+ryhmID int not null primary key AUTO_INCREMENT,
 ryhm varchar(10) unique,
 osakond varchar(20)
 );
@@ -68,7 +68,7 @@ FROM opilane o JOIN ryhm r
 ON o.ryhmID=r.ryhmID;
 --tabel hinne
 CREATE TABLE hinne(
-hinneID int primary key identity(1,1),
+hinneID int primary key AUTO_INCREMENT,
 hinne int,
 opilaneID int,
 oppeaine varchar(50)
