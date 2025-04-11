@@ -66,3 +66,17 @@ ON opilane.ryhmID=ryhm.ryhmID;
 SELECT o.perenimi, r.ryhm, o.aadress
 FROM opilane o JOIN ryhm r
 ON o.ryhmID=r.ryhmID;
+--tabel hinne
+CREATE TABLE hinne(
+hinneID int primary key identity(1,1),
+hinne int,
+opilaneID int,
+oppeaine varchar(50)
+);
+ALTER TABLE hinne 
+ADD foreign key (opilaneID) references opilane(opilaneID);
+
+INSERT INTO hinne(opilaneID, oppeaine, hinne)
+Values(7, 'andmebaasid', 3);
+select * from hinne;
+-- select ...hinne join opilane!
