@@ -1,11 +1,11 @@
---https://meet.google.com/yvy-omdj-vfr
 -- SQL kommentaar
--- SQL Server Managment Stuudio
+-- XAMPP Control Panel (Start Apache, Start MySQL)
 -- connect to
---(localdb)\mssqllocaldb
---Authentification: Windows Auth  - admini õigused localhostis
---Authentification: SQL Server Auth - varem loodud kasutajad
---New Query
+--localhost
+--Authentification: 
+--kasutajanimi - root 
+--parool ei ole
+--SQL:
 CREATE DATABASE merkulovaTIT;
 --Object Explorer on vaja pidevalt uuendada käsitsi!
 USE merkulovaTIT;
